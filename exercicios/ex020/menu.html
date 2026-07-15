@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu interativo</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            color: white;
+        }
+        main {
+            width: 800px;
+            height: 900px;
+            background-color: rgb(0, 0, 0);
+            margin: auto;
+            padding: 10px;
+            border-radius: 20px; 
+        }
+
+        ul {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            gap: 30px;
+            padding: 0;
+            margin: 0;
+        }
+
+        div li{
+            color: white;
+            position: relative;
+
+        }
+
+        div li > p {
+            display: none;
+            text-align: center;
+        }
+
+        div li:hover > p  {
+            display: flex;
+            color: rgb(255, 255, 255);
+            width: 80px;
+            margin: 0px;
+            position: absolute;   /* Tira o elemento do fluxo da página (ele flutua) */
+    top: 100%;            /* Gruda o topo do filho exatamente na base do pai */
+    left: 0;              /* Alinha a lateral esquerda com a do pai */
+    z-index: 99;
+    align-items: center;
+        }
+
+        div li:hover {
+            color: red;
+        }
+
+        li {
+            list-Style: none;
+            display: flex;
+            padding: 20px;
+            gap: 25px;
+            flex-direction: column;
+            
+        }
+
+        div img {
+             height: 100px;
+             justify-content: center;
+        }
+    </style>
+</head>
+<body>
+     <main>
+        <div>
+            <img src="580b57fcd9996e24bc43c529.png" alt="">
+        </div>
+        <div>
+            <ul>
+                <li>Inicio 
+                    <p>inicio 1</p>
+                </li>
+                <li>Sobre Nós
+                    <p>inicio 2</p>
+                </li>
+                <li>Produtos
+                    <p>inicio 3</p>
+                </li>
+                <li>Contato
+                    <p>inicio 4</p>
+                </li>
+            </ul>
+        </div>
+     </main>
+
+</body>
+</html>

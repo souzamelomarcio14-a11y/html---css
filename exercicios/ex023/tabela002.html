@@ -15,6 +15,8 @@
     table {
         width: 500px;
         border-collapse: collapse;
+        position: relative;
+
     }
 
     td, th {
@@ -23,19 +25,42 @@
         
         }
 
-        thead {
+        caption {
+            font-size: 1.5em;
+            font-weight: bold;
+            padding: 10px;
+            background-color: lightgray;
+            
+        }
+
+        thead, tfoot {
              background-color: gray;
              color: white;
         }
+
+        thead  tr > th {
+            position: sticky;
+            top: -1px;
+            background-color: #383838;
+        
+        }
+
+        tbody tr:nth-child(2n) {
+            background-color: #8d8d8d;
+            color: white;
+        }
+
+
 </style>
 <body>
     <h1>Uso de tabelas grandes</h1>
 
     <table>
+        <caption>População das unidades federativas</caption>
         <thead>
             <tr>
-                <th>Estado</th>
-                <th>População</th>
+                <th scope="col">Estado</th>
+                <th scope="col" style="width: 100px;">População</th>
             </tr>
 
         </thead>
@@ -80,15 +105,158 @@
                 <td>Roraima</td>
                 <td class="num">17 264 943</td>
             </tr>
+
+            <tr>
+                <td>São Paulo</td>
+                <td class="num">45 919 049</td>
+            </tr>
+
+            <tr>
+                <td>Minas gerais</td>
+                <td class="num">45 252 666</td>
+            </tr>
+
+            <tr>
+                <td>Rio de Jane</td>
+                <td class="num">17 264 943</td>
+            </tr>
+
+            <tr>
+                <td> Rio Grande do Sul</td>
+                <td class="num">17 264 943</td>
+            </tr>
+
+            <tr>
+                <td>Goiais</td>
+                <td class="num">17 264 943</td>
+            </tr>
+
+            <tr>
+                <td>Amazonas</td>
+                <td class="num">17 264 943</td>
+            </tr>
+
+            <tr>
+                <td>Bahia</td>
+                <td class="num">17 264 943</td>
+            </tr>
+
+            <tr>
+                <td>Roraima</td>
+                <td class="num">17 264 943</td>
+            </tr>
+            
+            <tr>
+                <td>São Paulo</td>
+                <td class="num">45 919 049</td>
+            </tr>
+
+            <tr>
+                <td>Minas gerais</td>
+                <td class="num">45 252 666</td>
+            </tr>
+
+            <tr>
+                <td>Rio de Jane</td>
+                <td class="num">17 264 943</td>
+            </tr>
+
+            <tr>
+                <td> Rio Grande do Sul</td>
+                <td class="num">17 264 943</td>
+            </tr>
+
+            <tr>
+                <td>Goiais</td>
+                <td class="num">17 264 943</td>
+            </tr>
+
+            <tr>
+                <td>Amazonas</td>
+                <td class="num">17 264 943</td>
+            </tr>
+
+            <tr>
+                <td>Bahia</td>
+                <td class="num">17 264 943</td>
+            </tr>
+
+            <tr>
+                <td>Roraima</td>
+                <td class="num">17 264 943</td>
+            </tr>
+
+            
         </tbody>
 
         <tfoot>
             <tr>
-                <th>Total de Habitantes</th>
+                <th scope="row">Total de Habitantes</th>
                 <td> 210 251 152</td>
             </tr>
 
         </tfoot>
     </table>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam nostrum blanditiis magni voluptatum commodi
+         sint pariatur temporibus quia fuga recusandae, perferendis, numquam eveniet consequatur dolore animi 
+         laboriosam tempore obcaecati accusantium.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis et quae dolorum molestias aliquam sint quisquam possimus nam,
+         sit reiciendis eos, quos, totam fugit ipsa similique est facere! Facere, libero?
+        </p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam nostrum blanditiis magni voluptatum commodi
+         sint pariatur temporibus quia fuga recusandae, perferendis, numquam eveniet consequatur dolore animi 
+         laboriosam tempore obcaecati accusantium.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis et quae dolorum molestias aliquam sint quisquam possimus nam,
+         sit reiciendis eos, quos, totam fugit ipsa similique est facere! Facere, libero?
+        </p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam nostrum blanditiis magni voluptatum commodi
+         sint pariatur temporibus quia fuga recusandae, perferendis, numquam eveniet consequatur dolore animi 
+         laboriosam tempore obcaecati accusantium.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis et quae dolorum molestias aliquam sint quisquam possimus nam,
+         sit reiciendis eos, quos, totam fugit ipsa similique est facere! Facere, libero?
+        </p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam nostrum blanditiis magni voluptatum commodi
+         sint pariatur temporibus quia fuga recusandae, perferendis, numquam eveniet consequatur dolore animi 
+         laboriosam tempore obcaecati accusantium.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis et quae dolorum molestias aliquam sint quisquam possimus nam,
+         sit reiciendis eos, quos, totam fugit ipsa similique est facere! Facere, libero?
+        </p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam nostrum blanditiis magni voluptatum commodi
+         sint pariatur temporibus quia fuga recusandae, perferendis, numquam eveniet consequatur dolore animi 
+         laboriosam tempore obcaecati accusantium.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis et quae dolorum molestias aliquam sint quisquam possimus nam,
+         sit reiciendis eos, quos, totam fugit ipsa similique est facere! Facere, libero?
+        </p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam nostrum blanditiis magni voluptatum commodi
+         sint pariatur temporibus quia fuga recusandae, perferendis, numquam eveniet consequatur dolore animi 
+         laboriosam tempore obcaecati accusantium.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis et quae dolorum molestias aliquam sint quisquam possimus nam,
+         sit reiciendis eos, quos, totam fugit ipsa similique est facere! Facere, libero?
+        </p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam nostrum blanditiis magni voluptatum commodi
+         sint pariatur temporibus quia fuga recusandae, perferendis, numquam eveniet consequatur dolore animi 
+         laboriosam tempore obcaecati accusantium.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis et quae dolorum molestias aliquam sint quisquam possimus nam,
+         sit reiciendis eos, quos, totam fugit ipsa similique est facere! Facere, libero?
+        </p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam nostrum blanditiis magni voluptatum commodi
+         sint pariatur temporibus quia fuga recusandae, perferendis, numquam eveniet consequatur dolore animi 
+         laboriosam tempore obcaecati accusantium.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis et quae dolorum molestias aliquam sint quisquam possimus nam,
+         sit reiciendis eos, quos, totam fugit ipsa similique est facere! Facere, libero?
+        </p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam nostrum blanditiis magni voluptatum commodi
+         sint pariatur temporibus quia fuga recusandae, perferendis, numquam eveniet consequatur dolore animi 
+         laboriosam tempore obcaecati accusantium.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis et quae dolorum molestias aliquam sint quisquam possimus nam,
+         sit reiciendis eos, quos, totam fugit ipsa similique est facere! Facere, libero?
+        </p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam nostrum blanditiis magni voluptatum commodi
+         sint pariatur temporibus quia fuga recusandae, perferendis, numquam eveniet consequatur dolore animi 
+         laboriosam tempore obcaecati accusantium.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis et quae dolorum molestias aliquam sint quisquam possimus nam,
+         sit reiciendis eos, quos, totam fugit ipsa similique est facere! Facere, libero?
+        </p>
+        
 </body>
 </html>
